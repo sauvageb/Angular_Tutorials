@@ -1,0 +1,19 @@
+<form>
+
+  <div>
+    <label for="title">Title</label>
+    <input id="title" type="text" [(ngModel)]="tutorial.title" name="title">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <input id="description" type="text" [(ngModel)]="tutorial.description" name="description">
+  </div>
+
+  <button (click)="saveTutorial()">Add</button>
+</form>
+
+<div *ngIf="submitted">
+  <h4>Tutorial was submitted successfully !</h4>
+  <button>Add new tutorial</button>
+</div>

@@ -1,0 +1,14 @@
+<h4>Tutorial</h4>
+
+<div *ngIf="currentTutorial">
+  <p>Id {{currentTutorial.id}}</p>
+  <p>Title {{currentTutorial.title}}</p>
+  <p>Description {{currentTutorial.description}}</p>
+  <p>Status {{currentTutorial.published ? 'PUBLISHED' : 'PENDING '}}</p>
+
+
+  <button (click)="removeTutorial()">Delete</button>
+
+</div>
+
+

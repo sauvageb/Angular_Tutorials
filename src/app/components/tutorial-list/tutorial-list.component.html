@@ -1,0 +1,10 @@
+<div *ngIf="tutorials; else noResult">
+
+  <ul *ngFor="let tuto of tutorials">
+    <li><a routerLink="details/{{tuto.id}}">{{tuto.title}}</a></li>
+  </ul>
+
+  <button (click)="removeAllTutorials()">Delete All</button>
+</div>
+
+<ng-template #noResult>No tutorial found</ng-template>
