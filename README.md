@@ -1,7 +1,7 @@
 
 # Projet Tutorials
 
-Simple projet Angular effectuant un CRUD de Jeux
+Simple projet Angular effectuant un CRUD de tutoriels
 
 Utilise l'API RestFul suivante :
 - https://github.com/sauvageb/SPRING_BOOT_Tutorials/
