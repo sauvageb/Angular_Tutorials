@@ -21,7 +21,6 @@ export class TutorialService {
     return this.http.get<Tutorial[]>(BASE_URL);
   }
 
-
   deleteAll(): Observable<void> {
     return this.http.delete<void>(BASE_URL);
   }
